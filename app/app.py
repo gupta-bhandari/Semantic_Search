@@ -47,6 +47,8 @@ def load_data():
 st.title("BERT-based Semantic Search Engine")
 
 data = load_data()
+for index, row in data.iterrows():
+    st.write(row['combined_features'])
 
 # Search bar
 search_query = st.text_input("Search for a product:")
